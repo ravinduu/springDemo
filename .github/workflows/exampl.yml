@@ -28,6 +28,7 @@ jobs:
       with:
         image: ravdsn/secret-message
         tags: v1.0
+        dockerfile: ./docker/Dockerfile
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
