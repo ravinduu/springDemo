@@ -21,7 +21,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       working-directory: ./springDemo
-      run: mvn -B package --file pom.xml
+      run: mvn -B -e -X package --file pom.xml
       
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
