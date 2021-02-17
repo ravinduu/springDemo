@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=springDemo/target/*.jar
 
 COPY ${JAR_FILE} app.jar
 
